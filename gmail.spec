@@ -5,11 +5,6 @@ Version:	0.6.0
 Release:	3
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
 patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
