@@ -1,7 +1,7 @@
 Summary:	Gmail is an experimental sql based vfolder email system
 Name:		gmail
-Version:	0.5.0
-Release:	2
+Version:	0.5.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
