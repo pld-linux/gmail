@@ -1,11 +1,15 @@
 Summary:	Gmail is an experimental sql based vfolder email system
+Summary(pl):	Gmail - eksperymentlny, bazuj±cy na SQL system pocztowy z vfolderami
 Name:		gmail
 Version:	0.6.0
 Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
 Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
 patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
@@ -35,6 +39,21 @@ keep all your mail in one big folder and:
  - Drag'n'drop from gnomecard addressbook
  - Mbox export, import available through POP3
  - Sound events, configurable through the Gnome control centre
+
+%description -l pl
+Gmail to eksperymentalny, bazuj±cy na SQL, system pocztowy z
+vfolderami. G³ówna cecha to do 255 widoków vfolder skrzynki pocztowej.
+Idea pochodzi od Miguela de Icaza, polega na tym, ¿eby pocztê trzymaæ
+w jednym du¿ym folderze i:
+- dostawaæ siê do niej z ró¿nych widoków (zapytañ)
+- u³atwienie 'matching', gdzie wiadomo¶ci nie wy³apane przez vfoldery
+  s± wrzucane do vfolderu Inbox; mechanizm buforuj±cy przyspiesza
+  dzia³anie
+- odbieranie poczty przez POP3
+- wysy³anie poczty przez SMTP
+- obs³uga przeci±gnij-i-upu¶æ z ksi±¿ki adresowej gnomecard
+- eksport do formatu mbox, import mo¿liwy poprzez POP3
+- zdarzenia d¼wiêkowe konfigurowalne z GNOME Control Center
 
 %prep
 %setup -q
