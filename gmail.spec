@@ -25,31 +25,31 @@ following features:
 Up to 255 vfolder views of the mail store. This is the main feature, I
 originally got this idea from Miguel De Icaza. The idea is that you
 keep all your mail in one big folder and:
- - approach it from different views (querys). It is a powerful way of
-   approaching email management
- - 'matching' facility where messages that don't get caught by your
-   custom vfolders are put into an 'Inbox' vfolder. A caching mechanism
-   based on this 'matched index' also gives fast speeds
- - incoming POP3
- - outgoing SMTP
- - Drag'n'drop from gnomecard addressbook
- - Mbox export, import available through POP3
- - Sound events, configurable through the GNOME control centre
+- approach it from different views (querys). It is a powerful way of
+  approaching email management
+- 'matching' facility where messages that don't get caught by your
+  custom vfolders are put into an 'Inbox' vfolder. A caching mechanism
+  based on this 'matched index' also gives fast speeds
+- incoming POP3
+- outgoing SMTP
+- Drag'n'drop from gnomecard addressbook
+- Mbox export, import available through POP3
+- Sound events, configurable through the GNOME control centre
 
 %description -l pl
 Gmail to eksperymentalny, bazuj±cy na SQL, system pocztowy z
 vfolderami. G³ówna cecha to do 255 widoków vfolder skrzynki pocztowej.
 Idea pochodzi od Miguela de Icaza, polega na tym, ¿eby pocztê trzymaæ
 w jednym du¿ym folderze i:
- - dostawaæ siê do niej z ró¿nych widoków (zapytañ)
- - u³atwienie 'matching', gdzie wiadomo¶ci nie wy³apane przez vfoldery
-   s± wrzucane do vfolderu Inbox; mechanizm buforuj±cy przyspiesza
-   dzia³anie
- - odbieranie poczty przez POP3
- - wysy³anie poczty przez SMTP
- - obs³uga przeci±gnij-i-upu¶æ z ksi±¿ki adresowej gnomecard
- - eksport do formatu mbox, import mo¿liwy poprzez POP3
- - zdarzenia d¼wiêkowe konfigurowalne z GNOME Control Center
+- dostawaæ siê do niej z ró¿nych widoków (zapytañ)
+- u³atwienie 'matching', gdzie wiadomo¶ci nie wy³apane przez vfoldery
+  s± wrzucane do vfolderu Inbox; mechanizm buforuj±cy przyspiesza
+  dzia³anie
+- odbieranie poczty przez POP3
+- wysy³anie poczty przez SMTP
+- obs³uga przeci±gnij-i-upu¶æ z ksi±¿ki adresowej gnomecard
+- eksport do formatu mbox, import mo¿liwy poprzez POP3
+- zdarzenia d¼wiêkowe konfigurowalne z GNOME Control Center
 
 %prep
 %setup -q
