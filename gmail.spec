@@ -1,7 +1,7 @@
 Summary:	Gmail is an experimental sql based vfolder email system
 Name:		gmail
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 make install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	Applicationsdir=%{_applnkdir}/Networking/Mail
+	Applicationsdir=%{_applnkdir}/Network/Mail
 
 gzip -9nf ChangeLog AUTHORS HACKING README* THANKS TODO
 
@@ -60,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/sound/*
-%{_applnkdir}/Networking/Mail/*
+%{_applnkdir}/Network/Mail/*
