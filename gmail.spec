@@ -41,7 +41,7 @@ keep all your mail in one big folder and:
 %patch -p1
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
