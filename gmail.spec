@@ -7,7 +7,9 @@ Group:		X11/Applications
 Group(pl):	X11/Aplikacje
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
 URL:		http://gmail.linuxpower.org/
-#BuildRequires:	
+BuildRequires:	esound-devel
+BuildRequires:	gnome-libs-devel
+BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
