@@ -1,11 +1,13 @@
 Summary:	Gmail is an experimental sql based vfolder email system
 Name:		gmail
-Version:	0.5.3
+Version:	0.6.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
+patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
@@ -35,9 +37,9 @@ keep all your mail in one big folder and:
 
 %prep
 %setup -q
+%patch -p1
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
@@ -61,3 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/sound/*
 %{_applnkdir}/Network/Mail/*
+%{_datadir}/gmail
