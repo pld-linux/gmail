@@ -1,7 +1,7 @@
 Summary:	Gmail is an experimental sql based vfolder email system
 Name:		gmail
 Version:	0.6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -11,7 +11,7 @@ patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
-BuildRequires:	mysql-devel
+BuildRequires:	mysql-devel >= 3.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
