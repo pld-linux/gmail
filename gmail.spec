@@ -6,6 +6,7 @@ Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
+# Source0-md5:	6dec954060841f8c62583cf8605f609c
 patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
