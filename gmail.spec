@@ -20,13 +20,13 @@ Gmail is an experimental sql based vfolder email system. It has the
 following features:
 
 Up to 255 vfolder views of the mail store. This is the main feature, I
-originally got this idea from Miguel De Icaza. The idea is that you keep
-all your mail in one big folder and:
+originally got this idea from Miguel De Icaza. The idea is that you
+keep all your mail in one big folder and:
  - approach it from different views (querys). It is a powerful way of
    approaching email management
- - 'matching' facility where messages that don't get caught by your custom
-   vfolders are put into an 'Inbox' vfolder. A caching mechanism based on this
-   'matched index' also gives fast speeds
+ - 'matching' facility where messages that don't get caught by your
+   custom vfolders are put into an 'Inbox' vfolder. A caching mechanism
+   based on this 'matched index' also gives fast speeds
  - incoming POP3
  - outgoing SMTP
  - Drag'n'drop from gnomecard addressbook
