@@ -1,8 +1,16 @@
 diff -urN gmail-0.6.0.orig/gmail.desktop gmail-0.6.0/gmail.desktop
 --- gmail-0.6.0.orig/gmail.desktop	2000-02-07 12:46:30.000000000 +0100
 +++ gmail-0.6.0/gmail.desktop	2004-07-04 14:00:18.497756280 +0200
-@@ -5,3 +5,4 @@
+@@ -1,7 +1,10 @@
+ [Desktop Entry]
+ Name=Gmail
+-Comment=Email client
++Comment[pl]=Klient poczty
+ Exec=gmail
  Icon=gnome-balsa2.png
- Terminal=0
+-Terminal=0
++Terminal=false
  Type=Application
 +Categories=GTK;GNOME;Network;Email;
++Encoding=UTF-8
++# vi: encoding=utf-8
