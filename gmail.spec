@@ -39,7 +39,7 @@ keep all your mail in one big folder and:
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
