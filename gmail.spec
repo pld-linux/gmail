@@ -15,7 +15,6 @@ BuildRequires:	libglade-gnome-devel
 BuildRequires:	mysql-devel >= 3.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define		_sysconfigdir	/etc/X11/GNOME
 
 %description
