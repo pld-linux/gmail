@@ -32,7 +32,7 @@ keep all your mail in one big folder and:
  - outgoing SMTP
  - Drag'n'drop from gnomecard addressbook
  - Mbox export, import available through POP3
- - Sound events, configurable through the Gnome control centre
+ - Sound events, configurable through the GNOME control centre
 
 %description -l pl
 Gmail to eksperymentalny, bazuj±cy na SQL, system pocztowy z
