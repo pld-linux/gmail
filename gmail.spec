@@ -16,8 +16,6 @@ BuildRequires:	libglade-gnome-devel
 BuildRequires:	mysql-devel >= 3.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfigdir	/etc/X11/GNOME
-
 %description
 Gmail is an experimental sql based vfolder email system. It has the
 following features:
