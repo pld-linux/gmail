@@ -8,6 +8,7 @@ Group:		X11/Applications
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
 # Source0-md5:	6dec954060841f8c62583cf8605f609c
 Patch0:		%{name}-gnome-print_fix.patch
+Patch1:		%{name}-mysql4.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
@@ -53,7 +54,14 @@ w jednym du¿ym folderze i:
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
+# workaround for non-working ac/am
+touch configure.in
+touch aclocal.m4
+touch Makefile.in
+touch */Makefile.in
+touch configure
 
 %build
 %configure2_13
@@ -66,8 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Applicationsdir=%{_applnkdir}/Network/Mail
 
-gzip -9nf ChangeLog AUTHORS HACKING README* THANKS TODO
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -75,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog AUTHORS HACKING README* THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/sound/*
 %{_applnkdir}/Network/Mail/*
