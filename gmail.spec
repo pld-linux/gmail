@@ -11,6 +11,7 @@ URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gnome-print-devel >= 0.28
+BuildRequires:	libglade-gnome-devel
 BuildRequires:	mysql-devel >= 3.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -65,8 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Applicationsdir=%{_applnkdir}/Network/Mail
 
-gzip -9nf ChangeLog AUTHORS HACKING README* THANKS TODO
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -74,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog AUTHORS HACKING README* THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/sound/*
 %{_applnkdir}/Network/Mail/*
