@@ -1,0 +1,12 @@
+diff -Nru gmail-0.6.0/src/print.c gmail-0.6.0.new/src/print.c
+--- gmail-0.6.0/src/print.c	Tue Sep 26 07:49:22 2000
++++ gmail-0.6.0.new/src/print.c	Fri Oct 27 11:56:25 2000
+@@ -27,7 +27,7 @@
+ #include <libgnomeprint/gnome-print-preview.h>
+ #include <libgnomeprint/gnome-print-pixbuf.h>
+ #include <libgnomeprint/gnome-font.h>
+-#include <libgnomeprint/gnome-printer-profile.h>
++#include <libgnomeprint/gnome-printer.h>
+ #include <libgnomeprint/gnome-printer-dialog.h>
+ #include <libgnomeprint/gnome-print-master.h>
+ #include <libgnomeprint/gnome-print-master-preview.h>
