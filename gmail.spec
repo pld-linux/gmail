@@ -11,7 +11,7 @@ patch0:		%{name}-gnome-print_fix.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
-BuildRequires:	gnome-print-devl >= 0.28
+BuildRequires:	gnome-print-devel >= 0.28
 BuildRequires:	mysql-devel >= 3.23
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
