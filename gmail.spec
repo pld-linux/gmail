@@ -8,6 +8,7 @@ Group:		X11/Applications
 Source0:	http://gmail.linuxpower.org/%{name}-%{version}.tar.gz
 # Source0-md5:	6dec954060841f8c62583cf8605f609c
 Patch0:		%{name}-gnome-print_fix.patch
+Patch1:		%{name}-mysql4.patch
 URL:		http://gmail.linuxpower.org/
 BuildRequires:	esound-devel
 BuildRequires:	gnome-libs-devel
@@ -51,7 +52,14 @@ w jednym du¿ym folderze i:
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
+# workaround for non-working ac/am
+touch configure.in
+touch aclocal.m4
+touch Makefile.in
+touch */Makefile.in
+touch configure
 
 %build
 %configure2_13
