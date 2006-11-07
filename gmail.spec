@@ -84,5 +84,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog AUTHORS HACKING README* THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/sound/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_datadir}/gmail
