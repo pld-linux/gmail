@@ -1,5 +1,5 @@
 Summary:	Gmail is an experimental sql based vfolder email system
-Summary(pl):	Gmail - eksperymentlny, bazuj±cy na SQL system pocztowy z vfolderami
+Summary(pl.UTF-8):   Gmail - eksperymentlny, bazujÄ…cy na SQL system pocztowy z vfolderami
 Name:		gmail
 Version:	0.6.0
 Release:	11
@@ -36,20 +36,20 @@ keep all your mail in one big folder and:
 - Mbox export, import available through POP3
 - Sound events, configurable through the GNOME control centre
 
-%description -l pl
-Gmail to eksperymentalny, bazuj±cy na SQL, system pocztowy z
-vfolderami. G³ówna cecha to do 255 widoków vfolder skrzynki pocztowej.
-Idea pochodzi od Miguela de Icaza, polega na tym, ¿eby pocztê trzymaæ
-w jednym du¿ym folderze i:
-- dostawaæ siê do niej z ró¿nych widoków (zapytañ)
-- u³atwienie 'matching', gdzie wiadomo¶ci nie wy³apane przez vfoldery
-  s± wrzucane do vfolderu Inbox; mechanizm buforuj±cy przyspiesza
-  dzia³anie
+%description -l pl.UTF-8
+Gmail to eksperymentalny, bazujÄ…cy na SQL, system pocztowy z
+vfolderami. GÅ‚Ã³wna cecha to do 255 widokÃ³w vfolder skrzynki pocztowej.
+Idea pochodzi od Miguela de Icaza, polega na tym, Å¼eby pocztÄ™ trzymaÄ‡
+w jednym duÅ¼ym folderze i:
+- dostawaÄ‡ siÄ™ do niej z rÃ³Å¼nych widokÃ³w (zapytaÅ„)
+- uÅ‚atwienie 'matching', gdzie wiadomoÅ›ci nie wyÅ‚apane przez vfoldery
+  sÄ… wrzucane do vfolderu Inbox; mechanizm buforujÄ…cy przyspiesza
+  dziaÅ‚anie
 - odbieranie poczty przez POP3
-- wysy³anie poczty przez SMTP
-- obs³uga przeci±gnij-i-upu¶æ z ksi±¿ki adresowej gnomecard
-- eksport do formatu mbox, import mo¿liwy poprzez POP3
-- zdarzenia d¼wiêkowe konfigurowalne z GNOME Control Center
+- wysyÅ‚anie poczty przez SMTP
+- obsÅ‚uga przeciÄ…gnij-i-upuÅ›Ä‡ z ksiÄ…Å¼ki adresowej gnomecard
+- eksport do formatu mbox, import moÅ¼liwy poprzez POP3
+- zdarzenia dÅºwiÄ™kowe konfigurowalne z GNOME Control Center
 
 %prep
 %setup -q
