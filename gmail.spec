@@ -1,5 +1,5 @@
 Summary:	Gmail is an experimental sql based vfolder email system
-Summary(pl.UTF-8):   Gmail - eksperymentlny, bazujący na SQL system pocztowy z vfolderami
+Summary(pl.UTF-8):	Gmail - eksperymentlny, bazujący na SQL system pocztowy z vfolderami
 Name:		gmail
 Version:	0.6.0
 Release:	11
